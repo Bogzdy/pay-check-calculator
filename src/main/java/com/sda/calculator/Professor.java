@@ -8,7 +8,7 @@ public class Professor extends Entity {
         if (salary > 0 ){
             this.salary = salary;
         } else {
-            throw new InvalidDataExeption();
+            throw new InvalidDataExeption("Negative number exception");
         }
     }
 

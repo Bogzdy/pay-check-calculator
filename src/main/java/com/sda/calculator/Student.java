@@ -10,7 +10,7 @@ public class Student extends Entity {
         if (scholarShip > 0) {
             this.scholarShip = scholarShip;
         } else {
-            throw new InvalidDataExeption();
+            throw new InvalidDataExeption("Negative number exception");
         }
     }
 

@@ -4,10 +4,10 @@ public abstract class Entity {
     protected String city;
 
     public Entity(String city) {
-        if (city != null && city != "") {
+        if (city != null && city != " ") {
             this.city = city;
         } else {
-            throw new InvalidDataExeption();
+            throw new InvalidDataExeption("Null or empty string");
         }
     }
 
